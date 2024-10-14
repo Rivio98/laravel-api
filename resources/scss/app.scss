@@ -1,0 +1,27 @@
+@import '~bootstrap/scss/bootstrap';
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+#sidebar {
+    width: 150px;
+    height: 100vh;
+    border-right: 1px solid lightgray;
+}
+
+#content {
+    width: calc(100vw - 150px);
+    height: 100vh;
+}
+
+header {
+    height: 75px;
+}
+
+main {
+    height: calc(100% - 75px);
+    margin: 20px 10px;
+}
+
+img {
+    width: 800px;
+    height: 343px;
+}
