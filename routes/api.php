@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\ProjectController as ProjectController;
+use App\Http\Controllers\Api\ProjectController as ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/ProjectIndedx', [ProjectController::class, 'home'])->name('project_home');
+Route::get('/index', [ProjectController::class, 'index'])->name('project_home');
